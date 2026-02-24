@@ -2,8 +2,6 @@
 - name: All services
   hosts: all
   roles:
-    - role: debug
-      tags: debug
     - role: restic_server
       tags: restic_server
     - role: s3cmd

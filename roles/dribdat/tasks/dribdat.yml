@@ -51,6 +51,7 @@
     - OAUTH_TYPE: "{{  dribdat_oauth_type }}"
     - OAUTH_ID: "{{ dribdat_oauth_id }}"
     - OAUTH_SECRET: "{{ dribdat_oauth_secret }}"
+    - OAUTH_DOMAIN: "{{ dribdat_oauth_domain | default('') }}"
   when: dribdat_oauth_type is defined
 
 - name: Start {{ role_name }} container {{ dribdat_hostname }}
